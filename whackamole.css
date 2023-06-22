@@ -1,6 +1,7 @@
 main{
     display: flex;
     justify-content: center;
+    
 }
 .game-container{
     display: grid; 
@@ -14,17 +15,28 @@ main{
       border: solid black 10px;
       max-width: 600px;
       padding: 30px;
+      cursor: url("img/hammer_up_cursor.png"), auto;
 }
 
 .game-cell{
     height: 120px;
     width: 120px;
     border: solid black 2px;
-    border-radius: 90px;
+    border-radius: 90px;   
+}
+.game-cell:active:hover{
+    cursor: url("img/hammer_down_cursor.png"), auto;
 }
 
 .mole{
-    background-color: red;
+    background-image: url("img/Screenshot\ 2023-06-22\ at\ 15.20.27.png");
+    background-size: contain;
+    background-position: center;
+}
+.mole:active:hover{
+    background-image: url("img/dead.png");
+    background-size: contain;
+    background-position: center;
 }
 
 .score-container {
