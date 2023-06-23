@@ -19,6 +19,9 @@ ul {
   font-size: 26px;
   border: 15px black solid;
 }
+a{
+    color: black;
+}
 a:visited{
     color:black;
 }
